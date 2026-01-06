@@ -1,1 +1,2 @@
-
+[mikrotik]
+mikrotik_host ansible_host=192.168.56.250 ansible_user=admin ansible_password=admin ansible_network_os=routers
