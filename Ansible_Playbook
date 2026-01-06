@@ -1,0 +1,25 @@
+name: configure RADIUS
+hosts: mikrotik
+gather_facts: no
+connection: network_cli
+
+
+
+vars:
+
+    ansible_network_os: community.routeros.routeros
+    ansible_user: admin
+    ansible_password: admin
+
+
+
+  tasks:
+
+        - name: Add RADIUS server for hotspot service
+          community.routeros.command:
+
+          commands:
+
+
+
+            -/radius add address=35.227.71.209 secret=testing123 service=hotspot
